@@ -9,7 +9,8 @@
 	<script>
 		const name = prompt("Как тебя зовут");
 		const age = prompt("Сколько тебе лет?");
-		alert(`Привет ${name}, тебе уже ${age} лет, ты крутой`);
+		const boss = confirm("Ты тут босс?")
+		alert(`Привет ${name}, тебе уже ${age} лет, ты крутой, а еще ты ${boss == true ? "босс" : "Не босс"}`);
 	</script>
 </body>
 </html>
