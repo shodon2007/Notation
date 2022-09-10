@@ -7,10 +7,16 @@
 </head>
 <body>
 	<script>
-		const name = prompt("Как тебя зовут");
-		const age = prompt("Сколько тебе лет?");
-		const boss = confirm("Ты тут босс?")
-		alert(`Привет ${name}, тебе уже ${age} лет, ты крутой, а еще ты ${boss == true ? "босс" : "Не босс"}`);
+		alert("Преобразования типов");
+		//Строка
+		const a = 123213;
+		const strA = String(a);
+		//число
+		const b = "1321313";
+		const intB = Number(b);
+		//Boolean
+		const c = "true";
+		const blnC = Boolean(c);
 	</script>
 </body>
 </html>
