@@ -6,17 +6,40 @@
 	<title>Document</title>
 </head>
 <body>
+	<input id="inputValue" type="text" placeholder="Введите десятичное число">
+	<input onclick="btnClick()" type="button" value="Ответ">
+	<span>Ваше число: <span id="result">13231</span></span>
 	<script>
-		alert("Преобразования типов");
-		//Строка
-		const a = 123213;
-		const strA = String(a);
-		//число
-		const b = "1321313";
-		const intB = Number(b);
-		//Boolean
-		const c = "true";
-		const blnC = Boolean(c);
+		const btnClick = () => {
+			let inputValue = 0;
+			inputValue = document.getElementById('inputValue').value;
+			val = inputValue;
+			math();
+			document.getElementById('result').innerHTML = "";
+			const alertValue = document.getElementById('result').innerHTML = result;
+		}
+		let val = 0;
+		let myArray = [];
+		let NewArray = [];
+		let result = "";
+		const math = () => {
+			result = "";
+			for (let i = 0; val > 0; i++){
+				let val2 = val % 2;
+				myArray[i] = Number(val2);
+				// console.log(val2)
+				val = val / 2;
+				val = Math.trunc(val)
+			};
+			let myArrayLength = myArray.length;
+			for (let i = 0; i < myArray.length; i++){
+				myArrayLength -= 1;
+				NewArray[i] = myArray[myArrayLength];
+				result += NewArray[i];
+			}
+			console.log(result);
+		}
+		console.log(result)
 	</script>
 </body>
 </html>
