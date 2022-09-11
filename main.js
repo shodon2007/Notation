@@ -10,12 +10,9 @@ const myFn = () => {
         value = value / 2;
         value = Math.trunc(value);
     }
-    let valueLength = myArray.length;
-    for (let i = 0; i < myArray.length; i++) {
-        valueLength -= 1;
-        NewArray[i] = myArray[valueLength];
-        result += NewArray[i];
-    }
+    myArray.reverse();
+    result = myArray.join('');
+    console.log(result)
     document.getElementById('result').innerHTML = result;
     if (result == '') {
         document.getElementById('result').innerHTML = 0;
