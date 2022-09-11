@@ -5,9 +5,9 @@ const myFn = () => {
     let NewArray = [];
     let result = "";
     for (let i = 0; value > 0; i++) {
-        let remaider = value % 2;
+        let remaider = value % 8;
         myArray[i] = remaider;
-        value = value / 2;
+        value = value / 8;
         value = Math.trunc(value);
     }
     myArray.reverse();
