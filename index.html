@@ -9,52 +9,39 @@
 </head>
 
 <body>
-	<div class="input">
-		<div class="input__text">Введите значение</div>
-		<table class="my-table">
-			<tr>
-				<td>
-					<span class="input__check"><input type="radio" id="n2">Двоичная</span>
-					<span class="input__check check2"><input type="radio" id="r2">Двоичная</span>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="input__check"><input type="radio" id="n3">Троичная</span>
-					<span class="input__check check2"><input type="radio" id="r3">Троичная</span>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="input__check"><input type="radio" id="n8">Восьмеричная</span>
-					<span class="input__check check2"><input type="radio" id="r8">Восьмеричная</span>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="input__check"><input type="radio" id="n10">Десятичная</span>
-					<span class="input__check check2"><input type="radio" id="r10">Десятичная</span>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span class="input__check"><input type="radio" id="n16">Шестнадцатеричная</span>
-					<span class="input__check check2"><input type="radio" id="r16">Шестнадцатеричная</span>
-				</td>
-			</tr>
-		</table>
-
-
-		<input class="input__input" value="222" id="inputValue" type="text">
+	<div class="body">
+		<div class="buttons">
+			<div id="b2" class="button" onclick="button(2, 'to')">
+				<div class="button__body">
+					2
+				</div>
+			</div>
+			<div id="b8" class="button" onclick="button(8, 'to')">
+				<div class="button__body">
+					8
+				</div>
+			</div>
+			<div id="b10" class="button" onclick="button(10, 'to')">
+				<div class="button__body">
+					10
+				</div>
+			</div>
+			<div id="b16" class="button" onclick="button(16, 'to')">
+				<div class="button__body">
+					16
+				</div>
+			</div>
+			<div id="b32" class="button" onclick="button(32, 'to')">
+				<div class="button__body">
+					32
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="button">
-		<input onclick="myFn()" type="button" value="Ответ">
+	<button onclick="result()">Результат</button>
+	<input type="text">
+	<script src="scripts/main.js"></script>
 	</div>
-	<div class="result">
-		<span id="result">13231</span>
-	</div>
-
-	<script src="main.js"></script>
 </body>
 
 </html>
