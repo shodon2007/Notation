@@ -5,6 +5,11 @@
   user-select: none;
 }
 
+@font-face {
+  font-family: baloo;
+  src: url(../fonts/baloo.ttf);
+}
+
 body {
   background-color: black;
 }
@@ -21,6 +26,7 @@ body {
 }
 
 .button {
+  font-family: baloo;
   color: black;
   background-color: white;
   position: relative;
@@ -34,7 +40,7 @@ body {
 }
 
 .button__body {
-  font-size: 50px;
+  font-size: 8em;
   border: 3px solid black;
   display: flex;
   justify-content: center;
