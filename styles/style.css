@@ -35,7 +35,7 @@ body {
   font-family: baloo;
   color: black;
   background-color: white;
-  width: 20%;
+  width: 25%;
 }
 
 .button__body {
@@ -74,6 +74,7 @@ body {
 }
 
 .answer {
+  font-family: baloo;
   display: flex;
   align-items: center;
   justify-content: center;
