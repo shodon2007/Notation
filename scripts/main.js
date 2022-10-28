@@ -1,6 +1,7 @@
 let answer = document.getElementById("answer");
 let input = document.getElementById("input");
 let plans = [2, 8, 10, 16];
+let outvalue;
 
 let whichButtonTo = 10;
 let whichButtonFrom = 2;
@@ -18,13 +19,31 @@ const buttonClick = (value, type) => {
         whichButtonFrom = value;
     }
 
-
     output();
 }
 
 
 
+const output = () => {
+    input = document.getElementById("input");
 
+    if (whichButtonTo == 2) {
+        outvalue = "0b" + input.value;
+    } else if (whichButtonTo == 8) {
+        outvalue = "0o" + input.value;
+    } else if (whichButtonTo == 10) {
+        outvalue = input.value;
+    } else if (whichButtonTo == 16) {
+        outvalue = "0x" + input.value;
+    }
+
+    error(outvalue);
+
+    outvalue = +outvalue;
+    outvalue = outvalue.toString(whichButtonFrom);
+
+    answer.innerHTML = outvalue;
+}
 
 
 
@@ -39,25 +58,10 @@ const addClass = (type, value) => {
     types.classList.add("checked");
 }
 
-const output = () => {
-    input = document.getElementById("input");
-    let outvalue;
-    if (whichButtonTo == 2) {
-        outvalue = "0b" + input.value;
-    } else if (whichButtonTo == 8) {
-        outvalue = "0o" + input.value;
-    } else if (whichButtonTo == 10) {
-        outvalue = input.value;
-    } else if (whichButtonTo == 16) {
-        outvalue = "0x" + input.value;
-    }
+
+const error = (outvalue) => {
     if (isNaN(+outvalue)) {
         answer.innerHTML = "error";
-        input.classList.add = "error";
         return;
-    } else {
-        input.classList.remove = "error";
     }
-    console.log(whichButtonTo);
-    answer.innerHTML = outvalue;
 }
