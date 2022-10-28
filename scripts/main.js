@@ -6,30 +6,28 @@ let whichButtonTo = 10;
 let whichButtonFrom = 2;
 
 
-const removeClass = (type) => {
-    type = type == "to" ? "b" : "f";
 
+
+const buttonClick = (value, type) => {
+    removeClass(type);
+    const types = document.getElementById(type + value);
+
+    if (type == "t") {
+        whichButtonTo = value;
+    } else {
+        whichButtonFrom = value;
+    }
+
+    types.classList.add("checked");
+}
+
+
+
+
+
+
+const removeClass = (type) => {
     for (let number of plans) {
         document.getElementById(type + number).classList.remove("checked");
     }
-}
-
-const toButton = (value) => {
-    let types = document.getElementById("b" + value);
-
-    removeClass("to");
-    whichButtonTo = value;
-    types.classList.add("checked");
-}
-
-const FromButton = (value) => {
-    removeClass("from");
-
-    let types = document.getElementById("f" + value);
-    whichButtonFrom = value;
-    types.classList.add("checked");
-}
-
-const change = () => {
-
 }
