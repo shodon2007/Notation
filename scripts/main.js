@@ -1,29 +1,35 @@
 let buttons = document.querySelectorAll(".button");
+let answer = document.getElementById("answer");
+let plans = [2, 8, 10, 16, 32];
 
-let type2 = document.getElementById('b2');
-let type8 = document.getElementById('b8');
-let type10 = document.getElementById('b10');
-let type16 = document.getElementById('b16');
-let type32 = document.getElementById('b32');
-
-let whichButtonTo = 2;
-let whichButtonFrom = 10;
+let whichButtonTo = 10;
+let whichButtonFrom = 2;
 
 
+const removeClass = (type) => {
+    type = type == "to" ? "b" : "f";
 
-const removeClass = () => {
-    type2.classList.remove("checked");
-    type8.classList.remove("checked");
-    type10.classList.remove("checked");
-    type16.classList.remove("checked");
-    type32.classList.remove("checked");
+    for (let number of plans) {
+        document.getElementById(type + number).classList.remove("checked");
+    }
 }
 
-const button = (value, type) => {
+const toButton = (value) => {
     let types = document.getElementById("b" + value);
-    removeClass();
+
+    removeClass("to");
     whichButtonTo = value;
-    type == "to" ? whichButtonTo == value : whichButtonFrom == value;
     types.classList.add("checked");
-    console.log(whichButtonTo, whichButtonFrom);
+}
+
+const FromButton = (value) => {
+    removeClass("from");
+
+    let types = document.getElementById("f" + value);
+    whichButtonFrom = value;
+    types.classList.add("checked");
+}
+
+const change = () => {
+
 }

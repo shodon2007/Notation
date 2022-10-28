@@ -11,35 +11,71 @@
 <body>
 	<div class="body">
 		<div class="buttons">
-			<div id="b2" class="button" onclick="button(2, 'to')">
+			<div id="b2" class="button" onclick="toButton(2)">
 				<div class="button__body">
 					2
 				</div>
 			</div>
-			<div id="b8" class="button" onclick="button(8, 'to')">
+			<div id="b8" class="button" onclick="toButton(8)">
 				<div class="button__body">
 					8
 				</div>
 			</div>
-			<div id="b10" class="button" onclick="button(10, 'to')">
+			<div id="b10" class="button checked" onclick="toButton(10)">
 				<div class="button__body">
 					10
 				</div>
 			</div>
-			<div id="b16" class="button" onclick="button(16, 'to')">
+			<div id="b16" class="button" onclick="toButton(16)">
 				<div class="button__body">
 					16
 				</div>
 			</div>
-			<div id="b32" class="button" onclick="button(32, 'to')">
+			<div id="b32" class="button" onclick="toButton(32)">
 				<div class="button__body">
 					32
 				</div>
 			</div>
 		</div>
+
+
+		<div class="input">
+			<input id="toInput" type="text" onchange="change()">
+		</div>
+
+		<div class="buttons">
+			<div id="f2" class="button checked" onclick="FromButton(2)">
+				<div class="button__body">
+					2
+				</div>
+			</div>
+			<div id="f8" class="button" onclick="FromButton(8)">
+				<div class="button__body">
+					8
+				</div>
+			</div>
+			<div id="f10" class="button" onclick="FromButton(10)">
+				<div class="button__body">
+					10
+				</div>
+			</div>
+			<div id="f16" class="button" onclick="FromButton(16)">
+				<div class="button__body">
+					16
+				</div>
+			</div>
+			<div id="f32" class="button" onclick="FromButton(32)">
+				<div class="button__body">
+					32
+				</div>
+			</div>
+		</div>
+
+
+		<div id="answer" class="answer">
+			Result
+		</div>
 	</div>
-	<button onclick="result()">Результат</button>
-	<input type="text">
 	<script src="scripts/main.js"></script>
 	</div>
 </body>

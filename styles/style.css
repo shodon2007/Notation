@@ -15,11 +15,17 @@ body {
 }
 
 .body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   width: 1200px;
+  height: 100vh;
   margin: 0 auto;
 }
 
 .buttons {
+  flex: 1 1 auto;
+  margin: 30px 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -29,14 +35,7 @@ body {
   font-family: baloo;
   color: black;
   background-color: white;
-  position: relative;
   width: 20%;
-}
-
-.button::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
 }
 
 .button__body {
@@ -47,13 +46,39 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .button.checked {
   border: 3px solid white;
   background-color: black;
   color: white;
+}
+
+.input {
+  flex: 1 1 auto;
+  margin: 30px 0;
+}
+
+.input input {
+  font-size: 5em;
+  font-family: baloo;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.input input::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  width: 100%;
+  flex: 1 1 auto;
+  background-color: white;
 }
