@@ -48,9 +48,9 @@ const output = () => {
 
 
 const removeClass = (type) => {
-    for (let number of plans) {
-        document.getElementById(type + number).classList.remove("checked");
-    }
+    plans.forEach((item) => {
+        document.getElementById(type + item).classList.remove("checked");
+    })
 }
 
 const addClass = (type, value) => {
