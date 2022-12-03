@@ -25,24 +25,9 @@ const buttonClick = (value, type) => {
 
 
 const output = () => {
-    input = document.getElementById("input");
-
-    if (whichButtonTo == 2) {
-        outvalue = "0b" + input.value;
-    } else if (whichButtonTo == 8) {
-        outvalue = "0o" + input.value;
-    } else if (whichButtonTo == 10) {
-        outvalue = input.value;
-    } else if (whichButtonTo == 16) {
-        outvalue = "0x" + input.value;
-    } else if (whichButtonTo == 36) {
-        outvalue = parseInt(input.value, 36);
-    }
-
-    error(outvalue);
-    outvalue = +outvalue;
+    outvalue = parseInt(input.value, whichButtonTo);
     outvalue = outvalue.toString(whichButtonFrom);
-
+    
     answer.innerHTML = outvalue;
 }
 
@@ -57,12 +42,4 @@ const removeClass = (type) => {
 const addClass = (type, value) => {
     const types = document.getElementById(type + value);
     types.classList.add("checked");
-}
-
-
-const error = (outvalue) => {
-    if (isNaN(+outvalue)) {
-        answer.innerHTML = "error";
-        return;
-    }
 }
