@@ -1,6 +1,6 @@
 let answer = document.getElementById("answer");
 let input = document.getElementById("input");
-let plans = [2, 8, 10, 16];
+let plans = [2, 8, 10, 16, 36];
 let outvalue;
 
 let whichButtonTo = 10;
@@ -19,6 +19,7 @@ const buttonClick = (value, type) => {
         whichButtonFrom = value;
     }
 
+    console.log(whichButtonTo)
     output();
 }
 
@@ -35,10 +36,12 @@ const output = () => {
         outvalue = input.value;
     } else if (whichButtonTo == 16) {
         outvalue = "0x" + input.value;
+    } else if (whichButtonTo == 36) {
+        outvalue = input.value;
     }
 
     error(outvalue);
-
+    console.log(outvalue)
     outvalue = +outvalue;
     outvalue = outvalue.toString(whichButtonFrom);
 
