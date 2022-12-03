@@ -19,7 +19,6 @@ const buttonClick = (value, type) => {
         whichButtonFrom = value;
     }
 
-    console.log(whichButtonTo)
     output();
 }
 
@@ -37,11 +36,10 @@ const output = () => {
     } else if (whichButtonTo == 16) {
         outvalue = "0x" + input.value;
     } else if (whichButtonTo == 36) {
-        outvalue = input.value;
+        outvalue = parseInt(input.value, 36);
     }
 
     error(outvalue);
-    console.log(outvalue)
     outvalue = +outvalue;
     outvalue = outvalue.toString(whichButtonFrom);
 
