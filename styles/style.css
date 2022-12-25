@@ -135,8 +135,9 @@ body {
 
 @media (max-width: 500px) {
   .body {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 10px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 
   .input input,
