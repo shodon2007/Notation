@@ -114,6 +114,8 @@ body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   background-color: white;
+  word-break: break-all;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -130,14 +132,23 @@ body {
   .button__body {
     font-size: 3em;
   }
+
+  .button,
+  .input input,
+  .answer {
+    height: 100px;
+  }
+
+  .buttons,
+  .input {
+    flex: 0 0 auto;
+  }
 }
 
 @media (max-width: 500px) {
   .body {
     gap: 10px;
     padding: 10px;
-    padding-top: 150px;
-    padding-bottom: 150px;
   }
 
   .button {
