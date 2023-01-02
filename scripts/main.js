@@ -24,10 +24,10 @@ const buttonClick = (value, type) => {
 
 
 
-const output = () => {
+function output() {
     outvalue = parseInt(input.value, whichButtonTo);
     outvalue = outvalue.toString(whichButtonFrom);
-    
+
     answer.innerHTML = outvalue;
 }
 
