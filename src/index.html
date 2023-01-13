@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notation</title>
+</head>
+
+<body>
+	<div class="body">
+		<div class="buttons">
+			<div id="to2" class="button" onclick="buttonClick(2, 'to')">
+				<div class="button__body">
+					2
+				</div>
+			</div>
+			<div id="to8" class="button" onclick="buttonClick(8, 'to')">
+				<div class="button__body">
+					8
+				</div>
+			</div>
+			<div id="to10" class="button checked" onclick="buttonClick(10, 'to')">
+				<div class="button__body">
+					10
+				</div>
+			</div>
+			<div id="to16" class="button" onclick="buttonClick(16, 'to')">
+				<div class="button__body">
+					16
+				</div>
+			</div>
+			<div id="to36" class="button" onclick="buttonClick(36, 'to')">
+				<div class="button__body">
+					36
+				</div>
+			</div>
+		</div>
+
+
+		<div class="input">
+			<input id="input" onchange="output()" type="text" value="0">
+		</div>
+
+		<div class="buttons">
+			<div id="from2" class="button checked" onclick="buttonClick(2, 'from')">
+				<div class="button__body">
+					2
+				</div>
+			</div>
+			<div id="from8" class="button" onclick="buttonClick(8, 'from')">
+				<div class="button__body">
+					8
+				</div>
+			</div>
+			<div id="from10" class="button" onclick="buttonClick(10, 'from')">
+				<div class="button__body">
+					10
+				</div>
+			</div>
+			<div id="from16" class="button" onclick="buttonClick(16, 'from')">
+				<div class="button__body">
+					16
+				</div>
+			</div>
+			<div id="from36" class="button" onclick="buttonClick(36, 'from')">
+				<div class="button__body">
+					36
+				</div>
+			</div>
+		</div>
+
+
+		<div id="answer" class="answer">
+			Result
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>
