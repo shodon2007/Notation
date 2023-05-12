@@ -1,0 +1,64 @@
+/*!********************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles.scss ***!
+  \********************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap);
+/*!*******************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/UI/MyButton.module.scss ***!
+  \*******************************************************************************************************************************/
+.cCoSfx7u6lzLSi2ySyRg {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  font-size: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+
+.WP9educgkNzL5LGAm1Qw {
+  background-color: black;
+  color: white;
+  border-color: white; }
+
+/*!************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles.scss (1) ***!
+  \************************************************************************************************************/
+* {
+  font-family: "Baloo 2";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  color: white; }
+
+body {
+  background-color: black; }
+
+.app {
+  display: grid;
+  grid-template-rows: repeat(1fr, 4);
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  gap: 20px; }
+
+.buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between; }
+
+.output {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem; }
+
+.input {
+  color: black;
+  font-size: 5rem; }
+
